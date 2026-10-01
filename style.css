@@ -88,6 +88,7 @@ h1 {
 /*#region Sidebar*/
 #sidebar {
     width: calc(20px + 2.5vw);
+    
     min-width: 50px;
     z-index: 1000;
     transition: all .25s ease-in-out;
@@ -115,6 +116,10 @@ h1 {
 
 .sidebar-logo {
     margin: auto;
+}
+
+.sidebar-footer {
+    flex: 1;
 }
 
 .sidebar-logo a {
@@ -170,7 +175,7 @@ a.sidebar-link:hover{
 
 #sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
     display: block;
-    max-height: 15rem;
+    max-height: 20rem;
     width: 100%;
     opacity: 1;
 }
@@ -214,4 +219,8 @@ a.sidebar-link:hover{
 /* Override */
 #hero {
     border-bottom: 5px solid var(--primary-color);
+}
+
+#footer {
+    border-top: 5px solid var(--primary-color);
 }
